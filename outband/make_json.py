@@ -26,5 +26,5 @@ for i in range(1, 5001):
       }
     }
   ]
-}'''
+}'''  % i
         f.write(data)
