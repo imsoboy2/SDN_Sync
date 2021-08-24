@@ -4,7 +4,7 @@ for i in range(1, 5001):
         data = ''' {
   "flows": [
     {
-      "priority": "1",
+      "priority": "%d",
       "timeout": 1,
       "isPermanent": false,
       "deviceId": "of:0000daeaadf8c24e",
