@@ -1,11 +1,11 @@
-CONTROLLER_IP=
-CONTROLLER_PORT=
+CONTROLLER_IP= Your controller IP address
+CONTROLLER_PORT= Your controller port number
 
 
 StartTime=$(date +%s.%N)
 for i in `seq 1 5000`
 do
-  curl -X POST --header "Content-Type: application/json" --header "Accept: application/json" -d @${1}${i}.json "http://$CONTROLLER_IP:$CONTROLLER_PORT/(SHARD)" --user karaf:karaf
+  curl -X POST --header "Content-Type: application/json" --header "Accept: application/json" -d @${1}${i}.json "ADDRESS FOR CONTROLLER SHARD" --user karaf:karaf
 
   
 done
